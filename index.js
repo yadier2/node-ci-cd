@@ -6,7 +6,7 @@ app.use(express.json());
 let tasks = [];
 
 app.get("/tasks", (req, res) => {
-  res.json(tasks);
+  res.json({nombre:"Hola"});
 });
 
 app.post("/tasks", (req, res) => {
