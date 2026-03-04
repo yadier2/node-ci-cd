@@ -5,7 +5,7 @@ describe("Tasks API", () => {
 
   it("should return empty array initially", async () => {
     const res = await request(app).get("/tasks");
-    expect(res.statusCode).toBe(200);
+    expect(res.statusCode).toBe(2001);
     expect(res.body).toEqual([]);
   });
 
